@@ -1,1 +1,41 @@
-<h1>Make your form here</h1>
+<!DOCTYPE html>
+<html>
+<head>Arrrrrgh</head>
+
+<body>
+    <h1>Ahoy there Matey, give us ye details</h1>
+    <form method="post" action="/pirates">
+        <h2>Pirate deets</h2>
+        <label>What's yer name matey? 
+        <input type=text name="pirate[name]"></label><br>
+        
+        <label>How heavy arrrrr ya in kilos of bounty? 
+        <input type=number name="pirate[weight]"></label><br>
+        
+        <label>How tall arrrr ya in cms? 
+        <input type=number name="pirate[height]"></label><br>
+        <h2>First Ship</h2>
+        
+        <label>What's yer first ship's name? 
+        <input id="ship_name_1" type=text name="pirate[ships][][name]"></label><br>
+        
+        <label>What kinda ship is it? 
+        <input id="ship_type_1" type=text name="pirate[ships][][type]"></label><br>
+        
+        <label>What booty did ye plunder? 
+        <input id="ship_booty_1" type=text name="pirate[ships][][booty]"></label><br>
+        
+        <h2>Second Ship</h2>
+        <label>What's yer second ship's name? 
+        <input id="ship_name_2" type=text name="pirate[ships][][name]"></label><br>
+        
+        <label>What kinda ship is it? 
+        <input id="ship_type_2" type=text name="pirate[ships][][type]"></label><br>
+        
+        <label>What booty did ye plunder? 
+        <input id="ship_booty_2" type=text name="pirate[ships][][booty]"></label><br>
+        <br>
+        <input type=submit id="Submit">
+    </form>
+</body>
+</html>
